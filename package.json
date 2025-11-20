@@ -1,0 +1,55 @@
+{
+  "name": "gate-pass-system",
+  "description": "Complete web-based system for managing student gate passes",
+  "version": "1.0.0",
+  "author": "Development Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/gate-pass-system"
+  },
+  "structure": {
+    "backend": {
+      "technology": "Node.js + Express",
+      "database": "MySQL",
+      "port": 5000
+    },
+    "frontend": {
+      "technology": "React 18",
+      "port": 3000
+    }
+  },
+  "features": [
+    "Student Registration & Authentication",
+    "Multi-Level Approval Workflow",
+    "QR Code Generation",
+    "Gate Pass Verification",
+    "Real-time Analytics",
+    "Comprehensive Audit Logs",
+    "Role-Based Access Control",
+    "Email Notifications"
+  ],
+  "departments": [
+    "CSE",
+    "IT",
+    "ECE",
+    "EEE",
+    "DS",
+    "CS"
+  ],
+  "roles": [
+    "student",
+    "hod",
+    "admin",
+    "security"
+  ],
+  "scripts": {
+    "backend-install": "cd backend && npm install",
+    "backend-dev": "cd backend && npm run dev",
+    "backend-start": "cd backend && npm start",
+    "frontend-install": "cd frontend && npm install",
+    "frontend-dev": "cd frontend && npm start",
+    "frontend-build": "cd frontend && npm run build",
+    "setup": "npm run backend-install && npm run frontend-install"
+  }
+}
