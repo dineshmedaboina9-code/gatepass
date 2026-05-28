@@ -2,6 +2,16 @@
 
 This is the complete Student Gate Pass Management System project structure.
 
+---
+
+## 🚀 LIVE PRODUCTION DEPLOYMENT
+
+The system is fully deployed in the cloud and permanently connected to your **Neon PostgreSQL database**:
+* **Frontend Web Application (Vercel)**: [https://gatepass-frontend-dinesh-s-projects19.vercel.app](https://gatepass-frontend-dinesh-s-projects19.vercel.app)
+* **Backend API Server (Render)**: [https://gatepass-backend-sqlite.onrender.com/health](https://gatepass-backend-sqlite.onrender.com/health)
+
+---
+
 ## Quick Start
 
 ### Prerequisites
@@ -103,7 +113,7 @@ gate/
 ## API Base URL
 
 ```
-http://localhost:5000/api
+https://gatepass-backend-sqlite.onrender.com/api
 ```
 
 ## Documentation
@@ -140,7 +150,7 @@ JWT_SECRET=your-jwt-secret
 
 ### Frontend .env
 ```
-REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=https://gatepass-backend-sqlite.onrender.com/api
 ```
 
 ## Database
