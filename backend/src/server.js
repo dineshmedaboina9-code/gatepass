@@ -9,6 +9,19 @@ const sequelize = require('./config/database');
 // Models (loads associations)
 require('./models');
 
+// Seeder
+const { seedDatabase } = require('./utils/seeder');
+
+// Sync database and seed default data
+sequelize.sync()
+  .then(async () => {
+    console.log('Database synchronized successfully.');
+    await seedDatabase();
+  })
+  .catch((err) => {
+    console.error('Database synchronization failed:', err);
+  });
+
 // Routes
 const authRoutes = require('./routes/authRoutes');
 const requestRoutes = require('./routes/requestRoutes');
