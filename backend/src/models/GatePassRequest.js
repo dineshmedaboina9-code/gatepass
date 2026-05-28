@@ -1,11 +1,12 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 const { REQUEST_STATUS } = require('../config/constants');
+const { v4: uuidv4 } = require('uuid');
 
 const GatePassRequest = sequelize.define('GatePassRequest', {
   id: {
     type: DataTypes.UUID,
-    defaultValue: DataTypes.UUIDV4,
+    defaultValue: () => uuidv4(),
     primaryKey: true
   },
   studentId: {

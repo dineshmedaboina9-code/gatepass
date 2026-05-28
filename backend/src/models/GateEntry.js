@@ -1,11 +1,12 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 const { ENTRY_STATUS } = require('../config/constants');
+const { v4: uuidv4 } = require('uuid');
 
 const GateEntry = sequelize.define('GateEntry', {
   id: {
     type: DataTypes.UUID,
-    defaultValue: DataTypes.UUIDV4,
+    defaultValue: () => uuidv4(),
     primaryKey: true
   },
   gatePassId: {
