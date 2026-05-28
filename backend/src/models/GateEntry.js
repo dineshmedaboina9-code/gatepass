@@ -34,7 +34,7 @@ const GateEntry = sequelize.define('GateEntry', {
     defaultValue: DataTypes.NOW
   },
   status: {
-    type: DataTypes.ENUM(...Object.values(ENTRY_STATUS)),
+    type: DataTypes.STRING,
     defaultValue: ENTRY_STATUS.PENDING_VALIDATION,
     allowNull: false
   },

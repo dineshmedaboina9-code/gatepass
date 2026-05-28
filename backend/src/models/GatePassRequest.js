@@ -33,7 +33,7 @@ const GatePassRequest = sequelize.define('GatePassRequest', {
     allowNull: true
   },
   status: {
-    type: DataTypes.ENUM(...Object.values(REQUEST_STATUS)),
+    type: DataTypes.STRING,
     defaultValue: REQUEST_STATUS.PENDING,
     allowNull: false
   },
