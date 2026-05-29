@@ -21,7 +21,7 @@ const AuditLog = sequelize.define('AuditLog', {
     allowNull: false
   },
   entityType: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(255),
     allowNull: false
   },
   entityId: {

@@ -29,7 +29,7 @@ const Notification = sequelize.define('Notification', {
     allowNull: false
   },
   relatedEntityType: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(255),
     allowNull: true
   },
   relatedEntityId: {
